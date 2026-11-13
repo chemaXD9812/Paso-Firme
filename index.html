@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración de caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Adaptación para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descripción de nuestra tienda -->
+    <meta name="description" content="Paso Firme, tu tienda de calzado para dama y caballero.">
+
+    <!-- Título que aparecerá en el navegador -->
+    <title>Paso Firme | Zapatería</title>
+
+    <!-- Enlace a nuestra hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ================================= -->
+    <!-- ENCABEZADO Y MENÚ DE NAVEGACIÓN   -->
+    <!-- ================================= -->
+
+    <header>
+
+        <!-- Nombre comercial -->
+        <h1>Paso Firme</h1>
+
+        <!-- Menú principal -->
+        <nav aria-label="Menú principal">
+
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#catalogo">Catálogo</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+
+        </nav>
+
+<!-- CONTADOR DEL CARRITO -->
+<div class="carrito-resumen">
+    <span>🛒 Mi carrito:</span>
+
+    <span id="contador-carrito" aria-live="polite">
+        0
+    </span>
+</div>
+
+    </header>
+
+
+    <!-- ================================= -->
+    <!-- CONTENIDO PRINCIPAL - HERO        -->
+    <!-- ================================= -->
+
+    <main>
+        
+<!-- ================================= -->
+<!-- CATÁLOGO DE PRODUCTOS             -->
+<!-- ================================= -->
+
+<section id="catalogo">
+
+    
+<!-- CATÁLOGO DE PRODUCTOS -->
+<section id="catalogo">
+
+    <h2>Nuestro catálogo</h2>
+
+    <p>Encuentra el calzado ideal para ti.</p>
+
+<!-- FILTROS DEL CATÁLOGO -->
+<div class="filtros">
+
+    <button type="button" data-filtro="todos">
+        Todos
+    </button>
+
+    <button type="button" data-filtro="dama">
+        Dama
+    </button>
+
+    <button type="button" data-filtro="caballero">
+        Caballero
+    </button>
+
+</div>
+
+    <!-- CATEGORÍA DAMA -->
+    <section id="dama">
+
+        <h2>Calzado para Dama</h2>
+
+            <article  class="producto"
+                 data-categoria="dama">
+
+            <img src="img/dama/tacones.jpg"
+                 alt="Tacones elegantes para dama">    
+
+
+            <h3>Tacones Elegantes</h3>
+            <p>Tallas: 22, 23, 24, 25</p>
+            <p>Precio: $599 MXN</p>
+
+            <button type="button">Agregar al carrito</button>
+        </article>
+
+            <article class="producto"      
+              data-categoria="dama">
+
+            <img src="img/dama/botas.jpg"
+                 alt="Botas para dama">
+
+
+            <h3>Botas Modernas</h3>
+            <p>Tallas: 23, 24, 25, 26</p>
+            <p>Precio: $799 MXN</p>
+
+            <button type="button">Agregar al carrito</button>
+        </article>
+
+            <article class="producto"
+                 data-categoria="dama">
+
+            <img src="img/dama/tenis.jpg"
+                 alt="Tenis casuales para dama">
+
+
+            <h3>Tenis Casual</h3>
+            <p>Tallas: 22, 23, 24, 25</p>
+            <p>Precio: $499 MXN</p>
+
+            <button type="button">Agregar al carrito</button>
+        </article>
+
+            <article class="producto"
+              data-categoria="dama"> 
+            
+            <img src="img/dama/sandalias.jpg"
+                 alt="Sandalias para dama">
+
+            <h3>Sandalias de Verano</h3>
+            <p>Tallas: 22, 23, 24, 25</p>
+            <p>Precio: $299 MXN</p>
+
+            <button type="button">Agregar al carrito</button>
+        </article>
+
+    </section>
+
+    <!-- CATEGORÍA CABALLERO -->
+    <section id="caballero">
+
+        <h2>Calzado para Caballero</h2>
+
+            <article class="producto"
+             data-categoria="caballero">
+
+            <img src="img/caballero/vestir.jpg"
+                 alt="Zapatos de vestir para caballero">
+
+            <h3>Zapatos de Vestir</h3>
+            <p>Tallas: 25, 26, 27, 28</p>
+            <p>Precio: $899 MXN</p>
+
+            <button type="button">Agregar al carrito</button>
+        </article>
+
+            <article class="producto"
+                 data-categoria="caballero">
+
+            <img src="img/caballero/botas.jpg"
+                 alt="Botas de trabajo para caballero">
+
+            <h3>Botas de Trabajo</h3>
+            <p>Tallas: 25, 26, 27, 28</p>
+            <p>Precio: $1,099 MXN</p>
+
+            <button type="button">Agregar al carrito</button>
+        </article>
+
+            <article class="producto"
+             data-categoria="caballero">
+
+            <img src="img/caballero/tenis.jpg"
+                 alt="Tenis deportivos para caballero">
+
+            <h3>Tenis Deportivos</h3>
+            <p>Tallas: 25, 26, 27, 28</p>
+            <p>Precio: $749 MXN</p>
+
+            <button type="button">Agregar al carrito</button>
+        </article>
+
+            <article class="producto"
+            data-categoria="caballero">
+
+            <img src="img/caballero/mocasines.jpg"
+                 alt="Mocasines para caballero">
+
+            <h3>Mocasines Clásicos</h3>
+            <p>Tallas: 25, 26, 27, 28</p>
+            <p>Precio: $699 MXN</p>
+
+            <button type="button">Agregar al carrito</button>
+        </article>
+
+    </section>
+
+</section>
+
+
+
+        <section id="inicio">
+
+            <h2>Camina con estilo, camina con Paso Firme</h2>
+
+            <p>
+                Descubre nuestra colección de calzado para dama
+                y caballero. Encuentra comodidad, calidad y estilo
+                en cada paso.
+            </p>
+
+            <!-- Enlace para explorar el catálogo -->
+            <a href="#catalogo">
+                Explorar catálogo
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================= -->
+    <!-- PIE DE PÁGINA                     -->
+    <!-- ================================= -->
+
+    <footer id="contacto">
+
+        <p>
+            &copy; 2026 Paso Firme.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- ================================= -->
+    <!-- CONEXIÓN CON JAVASCRIPT           -->
+    <!-- ================================= -->
+
+    <script src="js/app.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
